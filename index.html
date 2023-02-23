@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap16</title>
+</head>
+<body>
+
+     <header style="background: #e7ded9;">
+        <img src="./images/logo.svg" alt="arrows" width="150px" height="150px" style="display:block; margin: 0 auto; padding-top: 1rem; padding-bottom: 1rem; background: #e7ded9;">    
+        <nav class="nav nav-pills flex-column flex-md-row" style="justify-content: center;">
+           <li><a class="flex-sm text-sm-center nav-link" href="#">Home</a></li>
+                <a class="flex-sm text-sm-center nav-link" href="#sobre">Sobre</a>
+                <a class="flex-sm text-sm-center nav-link" href="#produtos">Produtos</a>
+                <a class="flex-sm text-sm-center nav-link" href="#contato">Contato</a>
+   
+         </nav>
+     </header>
+
+
+  <!-- SOBRE -->
+
+    <section id="sobre">
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-lg-6 col-md-12 col-sm-12">
+             <h2>Sobre nós</h2>
+             <p> Somos uma pequena empresa imobiliária familiar que tem pequenos imóveis distribuídos em diferentes territórios do Brasil. 
+                 O nosso objetivo é que se sinta em casa e que possa mudar-se para onde quiser, podendo encontrar conforto em qualquer lugar,
+                especialmente em nossos apartamentos.</p> 
+          </div>
+          <div class=" col-lg-6 col-md-12 col-sm-12">
+            <img src="./images/equipe.jpg" alt="houses" class="img-fluid rounded float-start" style=" opacity:0.5; margin-top:3rem;">
+          </div>
+      </div>
+      </div>
+    </section>
+
+  <!-- PRODUTOS -->
+<section id="produtos">
+  <div class="container-fluid">
+      <div class="row"> 
+        
+
+          <h2>Produto</h2>
+          <div class="col-sm">
+            <div class="card" >
+                <img src="./images/apartment1.jpg" alt="houses" class="img-fluid">
+               <div class="card-body">
+                  <h5 class="card-title"> Casa du Sol</h5>
+                   <p   class="card-text"> Esta casa esta situada em Perinopolis, perto da entrada ao povo</p>
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver casa
+                   </button>
+                  </div>
+               </div>
+            </div>
+
+<div class="col-sm">
+            <div class="card">
+                <img src="./images/apartment2.jpg" alt="houses" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title"> Casa da Água </h5>
+                <p   class="card-text"> Esta casa esta situada em Perinopolis, perto da entrada ao povo</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ver casa</a>
+              </div>
+            </div>
+            </div>
+
+<div class="col-sm">
+            <div class="card">
+                <img src="./images/apartment3.jpg" alt="houses" class="img-fluid">
+              <div class="card-body">
+                <h5 class="card-title"> Casa Madeira </h5>
+                <p   class="card-text"> Esta casa esta situada em Perinopolis, perto da entrada ao povo</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                  Ver casa
+                 </button>
+              
+              </div>
+            </div>
+            </div>
+   
+   </div>
+  </div>
+</section>
+
+
+  <!-- CONTATO -->
+<section id="contato">
+
+<div class="container">
+  <div class="row">
+
+    <div class=" col-lg-4 col-md-4 col-sm-12">
+      <h2>Contato</h2>
+      <p>Ficou interessado? Prencha os campos do formulário para receber uma cotação</p>
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-12">
+        <form class="form">
+
+            <div class="input-group">
+              <input class="form-control" type="text" name="nome" placeholder="digite seu nome" required>
+            </div>
+
+            <div class="input-group">
+              <input class="form-control" type="text" name="email" placeholder="digite seu email" required>
+            </div>
+
+            <div class="input-group">
+              <textarea class="form-control"  rows="5" placeholder='digite sua mensagem' required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-log btn-success" style="margin-top:2rem;"> Solicitar cotação</button>
+
+        </form>
+    </div>
+  </div>
+</div> 
+</section>
+
+
+
+  <!-- CHARD1-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Casa du Sol</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        
+         <div class="modal-body">
+            <h6>Quartos e tamanho</h6>
+            <table class="table table-hover table-striped">
+
+            <thead>
+        <tr>
+          <th>Quartos</th>
+          <th>Metros quadrados</th>
+        </tr>
+             </thead>
+
+      <tbody>
+        <tr>
+            <td>Dormitorio</td>
+            <td>50m2</td>
+        </tr>
+
+        <tr>
+          <td>Banheiro</td>
+          <td>30m2</td>
+        </tr>
+
+        <tr>
+          <td>Cozinha</td>
+          <td>45m2</td>
+        </tr>
+
+      </tbody>
+      </table>
+
+    </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+  <!-- CHARD2 -->
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Casa da Água</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+          
+           <div class="modal-body">
+              <h6>Quartos e tamanho</h6>
+              <table class="table table-hover table-striped">
+  
+              <thead>
+          <tr>
+            <th>Quartos</th>
+            <th>Metros quadrados</th>
+          </tr>
+               </thead>
+  
+        <tbody>
+          <tr>
+              <td>Dormitorio</td>
+              <td>70m2</td>
+          </tr>
+  
+          <tr>
+            <td>Banheiro</td>
+            <td>35m2</td>
+          </tr>
+  
+          <tr>
+            <td>Cozinha</td>
+            <td>40m2</td>
+          </tr>
+  
+        </tbody>
+        </table>
+  
+      </div>
+           <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  
+  
+
+ <!-- CHARD3 -->
+
+ <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Casa da Água</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        
+         <div class="modal-body">
+            <h6>Quartos e tamanho</h6>
+            <table class="table table-hover table-striped">
+
+            <thead>
+        <tr>
+          <th>Quartos</th>
+          <th>Metros quadrados</th>
+        </tr>
+             </thead>
+
+      <tbody>
+        <tr>
+            <td>Dormitorio</td>
+            <td>40m2</td>
+        </tr>
+
+        <tr>
+          <td>Banheiro</td>
+          <td>35m2</td>
+        </tr>
+
+        <tr>
+          <td>Cozinha</td>
+          <td>20m2</td>
+        </tr>
+
+      </tbody>
+      </table>
+
+    </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+
+  <!--FOOTER  -->
+<footer>
+  <div class="text-center p-4" style="background: #e7ded9;">
+    © 2022 Copyright Desenvolvido por Maite 
+  </div>
+
+</footer>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
